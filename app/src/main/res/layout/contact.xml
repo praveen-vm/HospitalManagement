@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_header_selector"
+
+    android:orientation="vertical">
+
+    <TextView
+
+        android:textSize="50dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Details"/>
+    <TextView
+        android:id="@+id/contactName"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hospital:CEG Hospital"/>
+
+    <TextView
+        android:id="@+id/contactPhone"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_20665478"/>
+
+    <TextView
+        android:id="@+id/contactEmail"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: ceghospital@gmail.com"/>
+
+    <TextView
+        android:id="@+id/contactWebsite"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Site: www.ceghosipital.com"/>
+</LinearLayout>

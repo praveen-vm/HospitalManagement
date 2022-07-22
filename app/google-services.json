@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "802437772722",
+    "firebase_url": "https://ceg-hospital-default-rtdb.firebaseio.com",
+    "project_id": "ceg-hospital",
+    "storage_bucket": "ceg-hospital.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802437772722:android:63677811394809a1a1a0ab",
+        "android_client_info": {
+          "package_name": "com.example.ceghospital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802437772722-5plierrhbde71mhdmkp4haqsuk2oop3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQR-Ac91lh-bb03rULUSHZYggLwZbg_Zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802437772722-5plierrhbde71mhdmkp4haqsuk2oop3f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

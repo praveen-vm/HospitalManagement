@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    tools:context=".DoctorActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:layout_height="215dp"
+        android:background="@drawable/rectangle_round"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Welcome Doctor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="32sp" />
+
+            <TextView
+
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_below="@+id/home_text"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="Welcome Doctor"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/specc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             android:layout_below="@+id/doctorName"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="How we can help you oday?"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#009688"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/buttonAddPatient"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Add a patient" />
+
+
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/buttonConsulterListPatients"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Consult patient list" />
+
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/buttonConsulterRDV"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Consult the list of appointments" />
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/buttonSignout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="#FF9800"
+        android:onClick="signout"
+        android:text="Sign out" />
+</LinearLayout>

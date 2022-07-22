@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/med1"
+    android:orientation="vertical"
+    tools:context="ConsulterListPatients">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearpatient"
+        android:layout_marginTop="10dp">
+
+    </com.google.android.material.progressindicator.LinearProgressIndicator>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPatients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/patient_list_item"/>
+</LinearLayout>

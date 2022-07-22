@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_doctor"
+    tools:context=".AddDoctor">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD DOCTOR"
+        android:id="@+id/addname"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_below="@+id/addname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DoctorName"
+        android:id="@+id/Doctorid"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Specilation"
+        android:layout_below="@id/Doctorid"
+        android:id="@+id/Specilation"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_below="@id/Specilation"
+        android:id="@+id/contactPhone"
+        android:inputType="number"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:enabled="false"
+        android:layout_below="@id/contactPhone"
+        android:id="@+id/email25"
+        android:layout_margin="5dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/male"
+        android:layout_below="@id/email25"
+        android:orientation="horizontal"
+        android:id="@+id/grp"
+        android:layout_margin="5dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email25"
+            android:id="@+id/male"
+            android:text="Male"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email25"
+            android:layout_toRightOf="@+id/male"
+            android:text="Female"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="56dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/grp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/age"
+        android:layout_toRightOf="@+id/age"
+        android:inputType="number" />
+
+    <TextView
+
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="54dp"
+        android:text="Age" />
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/age"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="10dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/returna"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/accept"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="10dp"
+        android:text="Return" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/returna"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true"
+        android:id="@+id/bar1"
+        android:visibility="invisible"></com.google.android.material.progressindicator.LinearProgressIndicator>
+
+</RelativeLayout>
